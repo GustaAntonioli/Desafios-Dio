@@ -8,15 +8,15 @@ public class Contador {
 		Scanner terminal = new Scanner(System.in);
 		
 		try {
-			// Lendo o primeiro parâmetro
+			// Primeiro parâmetro
 			System.out.println("Informe o primeiro parâmetro: ");
 			int parametroUm = Integer.parseInt(terminal.nextLine());
 			
-			// Lendo o segundo parâmetro
+			// Segundo parâmetro
 			System.out.println("Informe o segundo parâmetro: ");
 			int parametroDois = Integer.parseInt(terminal.nextLine());
 			
-			// Validando se parametroDois é maior ou igual que parametroUm
+			// Validação
 			if (parametroDois <= parametroUm){
 				throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior ou igual ao primeiro");
 			}
@@ -30,9 +30,7 @@ public class Contador {
 			//imprimir a mensagem: O segundo parâmetro deve ser maior ou igual ao primeiro
             System.out.println(exception.getMessage());
         }
-		
 		// fechando o scanner
 		//terminal.close();
-		
 	}
 }
