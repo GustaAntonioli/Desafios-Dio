@@ -15,15 +15,16 @@ public class Contador {
 			
 			// Fecha terminal
 			terminal.close();
-		try {
+		try { // Validação de ParametrosInvalidosException
 			if (parametroDois <= parametroUm){
 				throw new ParametrosInvalidosException("O segundo número deve ser maior ou igual ao primeiro.");
 			
-			} else 
-			for (int i = parametroUm; i <= parametroDois; i--) {
+			} else // Condicional com else if e o for para contar (parâmetros booleanos = true), se tudo for true imprime mensagem. 
+			for (int i = parametroUm; i <= parametroDois;) {
 				if (i == parametroUm || i == parametroDois) {
 					System.out.println("--Fim--");
 					}
+					break;
 				}
 			}
 		
