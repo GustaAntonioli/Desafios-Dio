@@ -19,9 +19,12 @@ public class Contador {
 			if (parametroDois <= parametroUm){
 				throw new ParametrosInvalidosException("O segundo número deve ser maior ou igual ao primeiro.");
 			
-			} else // Condicional com else if e o for para contar (parâmetros booleanos = true), se tudo for true imprime mensagem. 
+			} else 
+
 			for (int i = parametroUm; i <= parametroDois;) {
 				if (i == parametroUm || i == parametroDois) {
+					System.out.print("A diferença entre os parâmetros é: ");
+					System.out.println(parametroDois - parametroUm);
 					System.out.println("--Fim--");
 					}
 					break;
